@@ -1,1 +1,7 @@
-<p>update-recipe works!</p>
+<form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+    <label>Name: <input formControlName="name"></label>
+    <label>Prep Time: <input type="number" formControlName="prepTimeMinutes"></label>
+    <label>Cook Time: <input type="number" formControlName="cookTimeMinutes"></label>
+    <label>Cuisine: <input formControlName="cuisine"></label>
+    <button type="submit">Save</button>
+  </form>
